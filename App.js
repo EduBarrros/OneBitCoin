@@ -6,6 +6,8 @@ import {
   StatusBar
 } from 'react-native';
 import CurrentPrice from './src/components/CurrentPrice';
+import HistoryGrafic from './src/components/HistoryGrafic';
+import QuotationsList from './src/components/QuotationsList';
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
         barStyle='light-content'
       />
       <CurrentPrice />
+      <HistoryGrafic />
+      <QuotationsList />
     </SafeAreaView>
   );
 }
