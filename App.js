@@ -8,6 +8,7 @@ import {
 import CurrentPrice from './src/components/CurrentPrice';
 import HistoryGrafic from './src/components/HistoryGrafic';
 import QuotationsList from './src/components/QuotationsList';
+import QuotationsItem from './src/components/QuotationsList/QuotationsItem';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <CurrentPrice />
       <HistoryGrafic />
       <QuotationsList />
+      <QuotationsItem />
     </SafeAreaView>
   );
 }
