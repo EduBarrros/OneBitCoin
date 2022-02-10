@@ -2,14 +2,17 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import styles from './styles'
 
-const CurrentPrice = () => {
+const CurrentPrice = ({ price }) => {
     return (
         <View style={styles.headerPrice}>
+            <Text style={styles.textPriceTitle}>
+                Cotação atual:
+            </Text>
             <Text style={styles.currentPrice}>
-                $ 54423.365
+                $ { price }
             </Text>
             <Text style={styles.textPrice}>
-                Ultima cotação:
+                Ultimas cotações:
             </Text>
         </View>
     )

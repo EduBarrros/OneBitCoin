@@ -13,12 +13,18 @@ const styles = StyleSheet.create({
         color: '#f50d41',
         fontSize: 32,
         fontWeight: 'bold',
-        paddingTop: 20,
+        marginVertical: 20,
     },
 
     textPrice: {
         color: '#ffffff',
-        fontSize: 16,
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
+
+    textPriceTitle: {
+        color: '#ffffff',
+        fontSize: 22,
         fontWeight: 'bold',
     },
 
