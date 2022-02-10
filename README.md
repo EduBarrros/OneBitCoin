@@ -5,5 +5,5 @@ Projeto criado para a prática de desenvolvimento com o framework React Native
 
 ## Como executar
 * Clone o repositório
-* Instale as dependências com yarn
-* Inicie seu app com expo start
+* Instale as dependências com npm install
+* Inicie com expo start
