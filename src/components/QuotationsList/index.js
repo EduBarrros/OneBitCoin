@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, ScrollView, TouchableOpacity, FlatList } from 'react-native'
+import { View, Text, TouchableOpacity, FlatList } from 'react-native'
 import QuotationsItem from './QuotationsItem';
 import styles from './styles'
 
@@ -60,16 +60,15 @@ const QuotationsList = (props) => {
                     </Text>
                 </TouchableOpacity>
             </View>
-            <ScrollView>
-                <FlatList
-                    data={props.listTransactions}
-                    renderItem={({item}) => {
-                        return(
-                            <QuotationsItem valor={item.valor} data={item.data}/>
-                        )
-                    }}
-                />
-            </ScrollView>
+            <FlatList
+                keyExtractor={(item, index) => index.toString()}
+                data={props.listTransactions}
+                renderItem={({ item }) => {
+                    return (
+                        <QuotationsItem valor={item.valor} data={item.data} />
+                    )
+                }}
+            />
         </>
     )
 }

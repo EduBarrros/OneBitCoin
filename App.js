@@ -84,13 +84,11 @@ export default function App() {
     let returnApiG = await responseG.json();
     let selectListQuotationsG = returnApiG.bpi;
     const queryCoinsList = Object.keys(selectListQuotationsG).map((key) => {
-      return {
-        valor: selectListQuotationsG[key]
-      }
+      return selectListQuotationsG[key]
     })
     let dataG = queryCoinsList;
 
-    //console.log('Teste data Price ->', dataG)
+    console.log('Teste data Price ->', dataG)
 
     return dataG;
   }
@@ -104,7 +102,7 @@ export default function App() {
         barStyle='light-content'
       />
       <CurrentPrice />
-      <HistoryGrafic />
+      <HistoryGrafic infoGrafic={ coinsGraficList }/>
       <QuotationsList
         filterDay={updateDay}
         listTransactions={coinsList}
